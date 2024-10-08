@@ -3,8 +3,6 @@ const rootElement = document.getElementById(ROOT_ID);
 const cards = Array.from(rootElement.children);
 
 const handleOnRootClick = (event) => {
-  console.log("1");
-
   cards.forEach((card) => {
     const isCardExpanded = card.classList.contains("expand");
     if (event.target.id === ROOT_ID && isCardExpanded) {
