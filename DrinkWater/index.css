@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(163, 78, 243);
+  color: white;
+}
+
+.bucket {
+  height: 15rem;
+  width: 10rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.bucket-filler {
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  transition: height 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.glass-group {
+  gap: 1.5rem;
+}
+
+.glass {
+  width: 2rem;
+  height: 4rem;
+  border: 0.3rem solid white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.yet-to-start {
+  border: 0.1rem solid white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fill {
+  background-color: blue;
+}
